@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — RunRelief</title>
+  <meta name="description" content="RunRelief privacy policy — what data we collect, how we use it, and your rights." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="nav-logo">
+        <div class="app-icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="#0A0A0A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M10 2C7.24 2 5 4.24 5 7c0 3.75 5 9 5 9s5-5.25 5-9c0-2.76-2.24-5-5-5z"/>
+            <circle cx="10" cy="7" r="1.5"/>
+          </svg>
+        </div>
+        <span class="nav-wordmark">RunRelief</span>
+      </a>
+      <a href="index.html" class="nav-pill">← Back</a>
+    </div>
+  </nav>
+
+  <main class="container" style="padding-top: 48px; padding-bottom: 80px;">
+    <div class="privacy-section">
+      <h2>Privacy Policy</h2>
+      <p class="privacy-meta">Last updated: June 3, 2026</p>
+
+      <h3>Overview</h3>
+      <p>RunRelief ("we", "our", or "the app") is a mobile application designed to help runners find nearby public bathrooms during training runs. We are committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
+
+      <h3>What Data We Collect</h3>
+
+      <h3>Location Data</h3>
+      <p>RunRelief requires access to your device's location while the app is in use. We use your location to:</p>
+      <ul>
+        <li>Find public bathrooms near you</li>
+        <li>Display your position on the map</li>
+        <li>Auto-fill your location when submitting a community bathroom pin</li>
+      </ul>
+      <p>We only access your location <strong>while the app is open and in use</strong>. We do not track your location in the background.</p>
+
+      <h3>Anonymous Device Identifier</h3>
+      <p>When you first open RunRelief, we generate a random anonymous identifier (UUID) and store it on your device. This identifier:</p>
+      <ul>
+        <li>Is not linked to your name, email, or any personal information</li>
+        <li>Is used solely to associate community bathroom submissions with a device</li>
+        <li>Cannot be used to identify you personally</li>
+      </ul>
+
+      <h3>Community Submitted Pins</h3>
+      <p>If you choose to report a bathroom location, we store the following in our database:</p>
+      <ul>
+        <li>Latitude and longitude of the reported location</li>
+        <li>Type of bathroom (porta-potty or restroom)</li>
+        <li>Your anonymous device identifier</li>
+        <li>Submission timestamp</li>
+        <li>Expiry date (pins auto-expire after 30 days)</li>
+      </ul>
+      <p>We do not collect your name, email address, phone number, or any other personal information.</p>
+
+      <h3>What Data We Do Not Collect</h3>
+      <ul>
+        <li>No name, email, or account information</li>
+        <li>No photos or camera data</li>
+        <li>No contacts or calendar data</li>
+        <li>No payment information</li>
+        <li>No browsing history</li>
+        <li>No data from other apps</li>
+      </ul>
+
+      <h3>How We Use Your Data</h3>
+      <p>We use the data described above solely to:</p>
+      <ul>
+        <li>Show you nearby bathroom locations</li>
+        <li>Display community-reported pins on the map</li>
+        <li>Allow other runners to benefit from your community submissions</li>
+      </ul>
+      <p>We do not use your data for advertising, marketing, or any purpose beyond core app functionality.</p>
+
+      <h3>Data Sharing</h3>
+      <p>We do not sell, rent, or share your personal data with third parties for their marketing purposes.</p>
+      <p>RunRelief uses the following third-party services to operate:</p>
+      <p><strong>Supabase</strong><br>
+      We use Supabase to store community-submitted bathroom pins. Supabase is a secure cloud database provider. Community pin data (location coordinates, type, anonymous identifier) is stored on Supabase servers. You can review Supabase's privacy policy at <a href="https://supabase.com/privacy" style="color: var(--yellow);">https://supabase.com/privacy</a>.</p>
+      <p><strong>OpenStreetMap / Overpass API</strong><br>
+      Permanent public bathroom locations are sourced from OpenStreetMap, an open-source mapping project. We query the Overpass API using your approximate location to find nearby bathrooms. No personal data is sent to OpenStreetMap. You can review OpenStreetMap's privacy policy at <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" style="color: var(--yellow);">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a>.</p>
+      <p><strong>Apple Maps</strong><br>
+      When you tap "Take Me There," RunRelief opens Apple Maps on your device for walking directions. This interaction is governed by Apple's privacy policy at <a href="https://www.apple.com/legal/privacy" style="color: var(--yellow);">https://www.apple.com/legal/privacy</a>.</p>
+
+      <h3>Data Retention</h3>
+      <ul>
+        <li><strong>Community pins</strong> automatically expire and are deleted after 30 days</li>
+        <li><strong>Flagged pins</strong> are marked as inactive and excluded from results</li>
+        <li><strong>Anonymous device identifiers</strong> are stored on your device and in our database only in association with your submitted pins</li>
+      </ul>
+
+      <h3>Your Rights</h3>
+      <p>You may request deletion of any community pins associated with your anonymous device identifier by contacting us at the email address below. Since we do not collect personal information, we cannot identify you by name or email — please include your anonymous device identifier if possible (accessible in app settings).</p>
+
+      <h3>Children's Privacy</h3>
+      <p>RunRelief is not directed at children under the age of 13. We do not knowingly collect any information from children under 13.</p>
+
+      <h3>Changes to This Policy</h3>
+      <p>We may update this privacy policy from time to time. We will notify users of any significant changes by updating the "Last updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+      <h3>Contact Us</h3>
+      <p>If you have any questions about this privacy policy or how we handle your data, please contact us at:</p>
+      <p><strong>Email:</strong> <a href="mailto:privacy@runrelief.app" style="color: var(--yellow);">privacy@runrelief.app</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p style="color: var(--text-secondary);">&copy; 2026 RunRelief. All rights reserved.</p>
+        <p><a href="privacy.html" style="color: var(--text-secondary);">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
