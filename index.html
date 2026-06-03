@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Waitlist | TE Academy</title>
+    <meta name="description" content="Be the first to experience the future. Join our exclusive waitlist and get early access.">
+    <meta name="theme-color" content="#000000">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Animated grid background -->
+    <div class="grid-bg"></div>
+    
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    
+    <main class="container" id="main-content">
+        <header>
+            <div class="badge" role="banner">
+                <span>Coming Soon</span>
+            </div>
+            
+            <h1 class="hero-title">
+                Unlock the <span class="highlight">magic</span><br>
+                of your OP-1.
+            </h1>
+            
+            <p class="subtitle">
+                The OP-1 Field is powerful—but let's be honest, it's confusing at first. This course will walk you through everything, step by step. No random YouTube rabbit holes. Just a clear path from first sound to finished track.<br><br>
+                <strong>Join the waitlist</strong> to get early access and launch-day perks.
+            </p>
+        </header>
+        
+        <section class="form-container" aria-labelledby="waitlist-heading">
+            <div class="tech-accent"></div>
+            <div class="tech-accent-2"></div>
+            
+            <h2 id="waitlist-heading" class="sr-only">Join our waitlist</h2>
+            <form class="email-form" id="waitlistForm" name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="waitlist" />
+                <!-- Honeypot field for spam protection -->
+                <p style="display: none;">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                <div class="form-inner">
+                    <label for="emailInput" class="sr-only">Email address</label>
+                    <input 
+                        type="email" 
+                        class="email-input" 
+                        placeholder="Enter your email"
+                        required
+                        id="emailInput"
+                        name="email"
+                        autocomplete="email"
+                        aria-describedby="email-error"
+                        aria-invalid="false"
+                    >
+                    <button type="submit" class="submit-btn" id="submitBtn" aria-describedby="submit-status">
+                        <div class="loading" id="loading" aria-hidden="true"></div>
+                        <span id="btnText">Join Waitlist</span>
+                    </button>
+                </div>
+            </form>
+            
+            <div class="message success-message" id="successMessage" role="status" aria-live="polite" aria-atomic="true">
+                ✓ Success! You're now on the waitlist.
+            </div>
+            
+            <div class="message error-message" id="errorMessage" role="alert" aria-live="assertive" aria-atomic="true">
+                <span id="email-error"></span>Something went wrong. Please try again.
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" aria-labelledby="faq-heading">
+            <h2 id="faq-heading" class="faq-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+                    What is TE Academy and how does it work?
+                </button>
+                <div class="faq-answer" id="faq-1" role="region" aria-labelledby="faq-1-btn">
+                    <div class="faq-answer-content">
+                        TE Academy is an online course designed specifically for absolute beginners who want to get the most out of Teenage Engineering's OP-1 Field synthesizer. You'll learn through step-by-step video lessons, downloadable resources, and practical walkthroughs—all structured to help you build confidence and skill.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+                    How long does it take to complete the course?
+                </button>
+                <div class="faq-answer" id="faq-2" role="region">
+                    <div class="faq-answer-content">
+                        The full TE Academy program includes 40+ hours of content spread across 10 comprehensive modules. Most students complete the course in 6–8 weeks with consistent practice, but you can go at your own pace. You'll have lifetime access to all materials and future updates.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+                    When will TE Academy officially launch?
+                </button>
+                <div class="faq-answer" id="faq-3" role="region">
+                    <div class="faq-answer-content">
+                        We're targeting a late 2025 launch. If you join the waitlist, you'll be the first to know when enrollment opens and receive exclusive early access—2 weeks before the public release.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+                    What will I learn in this course?
+                </button>
+                <div class="faq-answer" id="faq-4" role="region">
+                    <div class="faq-answer-content">
+                        You'll learn how to:
+                        <ul>
+                            <li>Navigate the OP-1 Field interface</li>
+                            <li>Use its synth engines, tape recorder, sampler, sequencers, and mixer</li>
+                            <li>Build full tracks from scratch</li>
+                            <li>Record, arrange, and perform music with intention and creativity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+                    How much will the course cost?
+                </button>
+                <div class="faq-answer" id="faq-5" role="region">
+                    <div class="faq-answer-content">
+                        Pricing will be announced closer to launch. However, waitlist members will receive a special discount when enrollment opens.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+                    Will the course be self-paced?
+                </button>
+                <div class="faq-answer" id="faq-6" role="region">
+                    <div class="faq-answer-content">
+                        Yes! All lessons use a combination of written material and pre-recorded content, so you can watch them at any time, from anywhere. Learn on your own schedule and revisit the material whenever you need a refresher.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-7">
+                    Is this an official Teenage Engineering course?
+                </button>
+                <div class="faq-answer" id="faq-7" role="region">
+                    <div class="faq-answer-content">
+                        No. TE Academy is an independently produced course created by a passionate user (me!) to help others get the most out of their OP-1. It's not affiliated with or endorsed by Teenage Engineering.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-8">
+                    Will TE Academy offer courses for other Teenage Engineering products?
+                </button>
+                <div class="faq-answer" id="faq-8" role="region">
+                    <div class="faq-answer-content">
+                        Right now, our focus is entirely on helping beginners master the OP-1 Field. That said, we're open to expanding to other Teenage Engineering products in the future.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-9">
+                    How do I join the waitlist?
+                </button>
+                <div class="faq-answer" id="faq-9" role="region">
+                    <div class="faq-answer-content">
+                        Just enter your email in the form above. You'll receive occasional launch updates, sneak previews, and a special invite to enroll early before the public release. I promise no spam.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
