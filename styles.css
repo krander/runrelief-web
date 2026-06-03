@@ -392,7 +392,7 @@ h1 .accent { color: var(--yellow); }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
 
@@ -615,4 +615,5 @@ footer {
   .qr-card { width: 100%; max-width: 280px; }
   .privacy-section { padding: 24px; }
   .footer-top { flex-direction: column; }
+  .features-grid { grid-template-columns: 1fr; }
 }
