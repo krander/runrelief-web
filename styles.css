@@ -247,6 +247,8 @@ h1 .accent { color: var(--yellow); }
   position: relative;
   width: 100%;
   flex-shrink: 0;
+  background: #1A1A1A;
+  border-radius: 48px;
   filter: drop-shadow(0 40px 80px rgba(0,0,0,0.7));
 }
 
